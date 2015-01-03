@@ -2,6 +2,8 @@ tests-timeModification
 testAngelPloranerShoudNotRepeatTheSameFita
 	| fitaValue |
 	
+	Tardis initialize.
+	
 	"Set a milestone or 'fita' in order to be able to return to this moment in terms of application context. At the moment of the first invokation, the fitaValue will be set to 4."
 	fitaValue := Tardis fita: 2 * 2. 
 	
@@ -20,7 +22,7 @@ testAngelPloranerShoudNotRepeatTheSameFita
 				"If we've a value equals to '9', means we've properly modified the application context through the angelPloraner."
 				ifTrue: [
 					"Try to go back again with the 'angelPloraner' method call. Since we have not set any other 'fita', the program should continue and not go back in time again."
-					Tardis angelPloraner: 9.
+					Tardis angelPloraner: 9999.
 					self assert: true
 				]
 				"If we neither have a value equals to 4 nor 9, it means we've done something wrong with the application context and the angelPloraner doesn't properly modify it."

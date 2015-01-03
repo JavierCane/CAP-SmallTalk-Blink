@@ -2,6 +2,8 @@ tests-timeModification
 testAngelPloranerShoudGoBackInContext
 	| fitaValue |
 	
+	Tardis initialize.
+	
 	"Set a milestone or 'fita' in order to be able to return to this moment in terms of application context. At the moment of the first invokation, the fitaValue will be set to 4."
 	fitaValue := Tardis fita: 2 * 2. 
 	
