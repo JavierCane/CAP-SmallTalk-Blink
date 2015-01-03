@@ -1,0 +1,14 @@
+{
+	"category" : "Blink-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "TardisTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
