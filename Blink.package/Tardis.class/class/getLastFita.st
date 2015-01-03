@@ -1,0 +1,3 @@
+fitaAuxiliaries
+getLastFita
+	^ fitesStack top.
