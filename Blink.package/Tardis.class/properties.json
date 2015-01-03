@@ -1,10 +1,11 @@
 {
 	"category" : "Blink",
 	"classinstvars" : [
-		 ],
+		"numFites",
+		"numAngels" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "Ranirinn 1/3/2015 11:13",
 	"instvars" : [
 		 ],
 	"name" : "Tardis",
