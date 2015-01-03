@@ -1,4 +1,4 @@
 timeModification
 fita: anExpression
-	"One -fita- is a temporal mark available in order to return to it in terms of application context"
+	"a -fita- is a time mark available in order to return to it in terms of application context"
 	^ anExpression 
