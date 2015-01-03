@@ -1,3 +1,3 @@
 fitaAuxiliaries
 getLastFita
-	^ fitesStack top.
+	^ fitesContextsStack top.

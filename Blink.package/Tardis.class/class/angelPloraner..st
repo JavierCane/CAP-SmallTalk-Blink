@@ -4,14 +4,14 @@ angelPloraner: anExpression
 	| lastFita |
 	
 	"Firstly, check if the stack of fites is empty in order to do not make any action and only evaluate the received expression"
-	( fitesStack isEmpty )
+	( fitesContextsStack isEmpty )
 		ifTrue: [ 
 			^ anExpression
 		 ].
 	
-	"If we've any fita stored on the fitesStack, put the current context into the angelsPloranersContextsStack in order to be able to recover it from a #doctor call."
+	"If we've any fita stored on the fitesContextsStack, put the current context into the angelsPloranersContextsStack in order to be able to recover it from a #doctor call."
 	angelsPloranersContextsStack push: ( Continuation fromContext: thisContext sender ).
 	
 	"Also, recover the previously saved context and evaluate the expression on it."
-	lastFita := fitesStack pop.
+	lastFita := fitesContextsStack pop.
 	lastFita value: anExpression.
