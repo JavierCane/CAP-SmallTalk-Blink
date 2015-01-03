@@ -18,13 +18,7 @@ testAngelPloranerShoudGoBackInContext
 		 ]
 		ifFalse: [ 
 			"In case of a fitaValue different from '4', evaluate if it's equal to '9' since it's the value set by the angelPloraner call."
-			( fitaValue = 9 ) 
-				"If we've a value equals to '9', means we've properly modified the application context through the angelPloraner."
-				ifTrue: [
-					self assert: true
-				]
-				"If we neither have a value equals to 4 nor 9, it means we've done something wrong with the application context and the angelPloraner doesn't properly modify it."
-				ifFalse: [
-					self assert: false
-				]
+			"If we've a value equals to '9', means we've properly modified the application context through the angelPloraner."
+			"If we neither have a value equals to 4 nor 9, it means we've done something wrong with the application context and the angelPloraner doesn't properly modify it."
+			self assert: fitaValue equals: 9
 		]

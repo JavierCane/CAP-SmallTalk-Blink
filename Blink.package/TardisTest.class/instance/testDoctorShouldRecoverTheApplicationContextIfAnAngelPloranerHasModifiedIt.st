@@ -13,15 +13,9 @@ testDoctorShouldRecoverTheApplicationContextIfAnAngelPloranerHasModifiedIt
 			"Go to the last milestone or 'fita' set and evaluate it with the '9' as its expression, so we'll go back to the (fitaValue = 4) evaluation but it will go to the ifFalse case because the fitaValue will be '9'."
 			fitaValue := Tardis angelPloraner: 9.
 			
-			( fitaValue = 888 )
-				ifTrue: [ 
-					"If the fitaValue is equals to 888, it means that we've passed through the #doctor call, so the test has finished correctly."
-					self assert: true.
-				]
-				ifFalse: [ 
-					"We'll never arrive to this point, so we're throwing an exception thanks to the assert method in order to make the test fail."
-					self assert: false.
-				]
+			"If the fitaValue is equals to 888, it means that we've passed through the #doctor call, so the test has finished correctly."
+			"We'll never arrive to this point, so we're throwing an exception thanks to the assert method in order to make the test fail."
+			self assert: fitaValue equals: 888
 		 ]
 		ifFalse: [ 
 			"In case of a fitaValue different from '4', evaluate if it's equal to '9' since it's the value set by the angelPloraner call."
