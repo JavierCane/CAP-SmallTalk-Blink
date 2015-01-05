@@ -1,5 +1,19 @@
 tests-timeModification
 testDelivery
+"This test should print through the Transcript the following text: 
+==> b : 3
+==> a : false
+==> e : 4
+==> d : false
+hem arribat fins aqui!
+==> e : 5
+==> d : true
+==> b : 4
+==> a : true
+aqui!
+==> g : tot va be
+==> h : tot va be"
+
 	Tardis initialize.
 	( TA auxWith: $a and: ( ( TA auxWith: $b and: ( Tardis fita: 3 ) ) = 4 ) )
  		ifTrue: [
