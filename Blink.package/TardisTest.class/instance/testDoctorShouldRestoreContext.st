@@ -1,5 +1,5 @@
 tests-timeModification
-testDoctorShouldRecoverTheApplicationContextIfAnAngelPloranerHasModifiedIt
+testDoctorShouldRestoreContext
 	| fitaValue |
 	
 	Tardis initialize.
